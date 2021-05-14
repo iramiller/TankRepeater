@@ -500,7 +500,7 @@ OverviewPage {
 		anchors.left: acModeButton.right
 		anchors.bottom: parent.bottom
 
-		property variant texts: [ qsTr("AUTO"), qsTr("ON"), qsTr("OFF")]
+		property variant texts: [ qsTr("ON"), qsTr("OFF")]
 		property int value: 0
 		property bool reset: false
 		property bool pumpEnabled: pumpRelay.value === 3
@@ -537,7 +537,7 @@ OverviewPage {
 			applyAnimation.restart()
 			reset = false
 
-			if (value < 2)
+			if (value < 1)
 				value++
 			else
 				value = 0
